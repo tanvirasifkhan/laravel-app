@@ -11,7 +11,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /laravel-app
 
-COPY . /
+COPY . ./
 
 RUN composer install
 
