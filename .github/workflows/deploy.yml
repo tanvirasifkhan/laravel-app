@@ -20,5 +20,5 @@ jobs:
             - name: Delete old running container
               run: docker rm -f laravel-app || true
             - name: Run container from pulled image
-              run: docker run --name laravela-app -p 8000:8000 -d tanvirasifkhan/laravel-app
+              run: docker run --name laravel-app -p 8000:8000 -d tanvirasifkhan/laravel-app
             
