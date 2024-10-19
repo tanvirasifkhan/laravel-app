@@ -8,5 +8,10 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/', function (Request $request) {
-    return response()->json(['message' => 'Hello']);
+    return response()->json([
+        'status' => 200,
+        'message' => 'Laravel Docker Github Actions',
+        'Language' => phpversion(),
+        'Framework' => config('app.name')
+    ]);
 });
