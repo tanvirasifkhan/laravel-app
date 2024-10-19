@@ -15,3 +15,7 @@ Route::get('/', function (Request $request) {
         'Framework' => config('app.name')
     ]);
 });
+
+Route::get('/say-hello', function (Request $request) {
+    return response()->json(['message' => "Hello World"]);
+});
